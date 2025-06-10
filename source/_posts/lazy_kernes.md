@@ -7,9 +7,10 @@ tags:
 **Summary:**  
 Ever had your CUDA kernels mysteriously hang, even though everything *looked* fine? You're not alone. This post walks through a deceptively simple code snippet that deadlocks — and explains how **lazy loading**, **asynchronous streams**, and **cold GPUs** all conspire to make benchmarking and debugging... interesting. We'll break down what happens, why it matters, and how to keep your GPU pipelines warm and humming.
 
+<!-- more -->
+
 ---
 
-<!-- more -->
 
 ## 💥 The Problem: A Hanging CUDA Program
 
