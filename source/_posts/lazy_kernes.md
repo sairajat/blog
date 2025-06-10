@@ -76,7 +76,7 @@ Why? Because of **lazy kernel loading**.
 By default, CUDA uses **lazy loading** (`CUDA_MODULE_LOADING=LAZY`). This means:
 
 - Kernels aren't actually loaded onto the GPU until *just before they run*.
-- If a kernel is blocked (e.g., `k1` is spinning forever waiting on `s`), it may **never yield**, so `k2`’s module never gets loaded.
+- *Loading kernels might require context synchronization* - If a kernel is blocked (e.g., `k1` is spinning forever waiting on `s`), it may **never yield**, so `k2`’s module never gets loaded.
 - Result: `k2` never executes → `s` never becomes `1` → `k1` spins forever → 💀 deadlock.
 
 ### ✅ Fix It: Set Module Loading to Eager
