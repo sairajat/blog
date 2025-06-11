@@ -23,3 +23,5 @@ tags:
   - Expert Parallelism
   - Context Parallelism
   - Sequence Parallelism
+  - Pipeline Parallelism
+  - 4D Parallelism
