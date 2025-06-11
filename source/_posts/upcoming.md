@@ -12,6 +12,16 @@ tags:
 - Tensor cores
   - mma
   - wmma
-  - wgmma
+  - wgmma + TMA
 - torch.compile
 - MoE : FlashDMoE
+- Reduction
+- Prefix Scan
+- Flashattention + FlashMLA
+- Model Parallelism or Distributed training/inference
+  - FSDP
+  - Expert Parallelism
+  - Context Parallelism
+  - Sequence Parallelism
+  - Pipeline Parallelism
+  - 4D Parallelism
